@@ -81,7 +81,7 @@ Now run `npm start`, this will start the development server (it won't finish it'
 - Convert ES5 React module to ES6
     - compare them side-by-side
 
-** frameworks talk/discussion **
+**frameworks talk/discussion**
 
 - Install and use the router
     - public and 'repos' routes
