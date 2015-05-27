@@ -53,14 +53,6 @@ Now run `npm start`, this will start the development server (it won't finish it'
     - Consuming an external JSON API
 3. Putting your app on the Internet
 
-## Resources / Reading
-
-- [Thinking in React](https://facebook.github.io/react/docs/thinking-in-react.html)
-- [Reusable React Components](https://facebook.github.io/react/docs/reusable-components.html)
-- [Standard Linter](https://github.com/feross/standard)
-- [Setting up ESLint, React and ES6](https://medium.com/@dan_abramov/lint-like-it-s-2015-6987d44c5b48)
-- [Labelr Demo App Source](https://github.com/HenrikJoreteg/labelr)
-- [Complete HubTags.com Source](https://github.com/henrikjoreteg/hubtags.com)
 
 ## Rough Outline
 
@@ -119,6 +111,7 @@ Now run `npm start`, this will start the development server (it won't finish it'
 - Static Isomorphic Rendering
 - Using Standard for Code Style
 
+
 ## Taking it further
 
 Hard to say how much we'll get through in the class, but following along is one thing, but tackling something on your own is quite another. 
@@ -136,4 +129,26 @@ In addition, you may want to try adding the following:
 - Write module that fetches "all" repos (using github paging API)
 - Add color picker?
 
+
+## Further study
+
 Want this content in video form for you or someone you know? It's available online here: http://learn.humanjavascript.com/react-ampersand
+
+The code `workshopper` will take $20 off. Feel free to share it with co-workers or friends.
+
+- [My Book, Human JavaScript](http://humanjavascript.com)
+- [Thinking in React](https://facebook.github.io/react/docs/thinking-in-react.html)
+- [Reusable React Components](https://facebook.github.io/react/docs/reusable-components.html)
+- [Standard Linter](https://github.com/feross/standard)
+- [Setting up ESLint, React and ES6](https://medium.com/@dan_abramov/lint-like-it-s-2015-6987d44c5b48)
+- [Labelr Demo App Source](https://github.com/HenrikJoreteg/labelr)
+- [Complete HubTags.com Source](https://github.com/henrikjoreteg/hubtags.com)
+
+
+## Feedback
+
+Please take a minute to give Henrik some feedback on the workshop here: http://bit.ly/filive-feedback
+
+If you liked it maybe even tweet about it :) I'm [@HenrikJoreteg](http://twitter.com/henrikjoreteg) on twitter. 
+
+<3

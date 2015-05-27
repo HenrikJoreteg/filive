@@ -1,5 +1,5 @@
 {
-  "name": "filive",
+  "name": "labelr",
   "version": "1.0.0",
   "dependencies": {
     "ampersand-app": "^1.0.1",
@@ -40,7 +40,7 @@
   "private": true,
   "scripts": {
     "build": "webpack",
-    "deploy": "surge -p public -d filive.surge.sh",
+    "deploy": "surge -p public -d labelr.surge.sh",
     "start": "webpack-dev-server",
     "test": "standard",
     "yolo": "npm run test && npm version minor && git push origin master --tags && npm run build && npm run deploy"
