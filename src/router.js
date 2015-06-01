@@ -1,3 +1,4 @@
+import app from 'ampersand-app'
 import Router from 'ampersand-router'
 import React from 'react'
 import PublicPage from './pages/public'
