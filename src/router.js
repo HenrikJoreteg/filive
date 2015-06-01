@@ -36,7 +36,7 @@ export default Router.extend({
       url: 'http://labelr-dev.herokuapp.com/authenticate/' + code,
       json: true
     }, (err, req, body) => {
-      console.log(body)
+      app.me.token = body.token
     })
   }
 })
