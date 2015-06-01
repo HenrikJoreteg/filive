@@ -7,6 +7,16 @@ import Layout from './components/layout'
 import qs from 'qs'
 import xhr from 'xhr'
 
+function auth(handlerName) {
+  return function () {
+    if (app.me.token) {
+      this[handlerName].apply(this, arguments)
+    } else {
+      this.redirectTo('/')
+    }
+  }
+}
+
 export default Router.extend({
   renderPage (page, opts = {layout: true}) {
     if (opts.layout) {
@@ -22,8 +32,9 @@ export default Router.extend({
 
   routes: {
     '': 'public',
-    'repos': 'repos',
+    'repos': auth('repos'),
     'login': 'login',
+    'logout': 'logout',
     'auth/callback?code=:code': 'authCallback'
   },
 
@@ -33,6 +44,11 @@ export default Router.extend({
 
   repos () {
     this.renderPage(<ReposPage repos={app.me.repos}/>)
+  },
+
+  logout () {
+    window.localStorage.clear()
+    window.location = '/'
   },
 
   login () {
