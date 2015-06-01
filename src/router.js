@@ -2,10 +2,23 @@ import Router from 'ampersand-router'
 import React from 'react'
 import PublicPage from './pages/public'
 import ReposPage from './pages/repos'
+import Layout from './components/layout'
 import qs from 'qs'
 import xhr from 'xhr'
 
 export default Router.extend({
+  renderPage (page, opts = {layout: true}) {
+    if (opts.layout) {
+      page = (
+        <Layout>
+          {page}
+        </Layout>
+      )
+    }
+
+    React.render(page, document.body)
+  },
+
   routes: {
     '': 'public',
     'repos': 'repos',
@@ -14,11 +27,11 @@ export default Router.extend({
   },
 
   public () {
-    React.render(<PublicPage/>, document.body)
+    this.renderPage(<PublicPage/>, {layout: false})
   },
 
   repos () {
-    React.render(<ReposPage/>, document.body)
+    this.renderPage(<ReposPage/>)
   },
 
   login () {
