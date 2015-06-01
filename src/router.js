@@ -50,6 +50,8 @@ export default Router.extend({
       json: true
     }, (err, req, body) => {
       app.me.token = body.token
+
+      this.redirectTo('/repos')
     })
   }
 })
